@@ -1,13 +1,129 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>cv</title>
+  <link rel="icon" href="./assets/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-    
+  <header class="header">
+    <div class="container header-container">
+      <nav class="nav">
+        <ul class="nav-list">          
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contact information</a></li>
+          <li class="nav-item"><a href="#aboutMyself" class="nav-link">About Myself</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills and Proficiency</a></li>          
+          <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+          <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+        </ul>
+      </nav>
+      <div class="toggle">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container main-container">
+      <section class="section section-profile" id="profile">
+        <img src="./assets/img/my-Foto.jpg" alt="" class="section-profile-logo">
+        <div class="section-profile-title">
+          <h1 class="section-title main-title">Askarova Ailira</h1>
+          
+        </div>        
+      </section>
+      <section class="section" id="contacts">
+        <h2 class="section-title">Contact information</h2>
+        <ul class="section-list">
+          <li class="section-item contacts-item">
+            Email: <a href="mailto:lira.959595@gmail.com" title="email">lira.959595@gmail.com</a>
+          </li>
+          <li class="section-item contacts-item">
+            Github: <a href="https://github.com/irinainina" title="github">Ailira95</a>
+          </li>
+          <li class="section-item contacts-item">
+            Telegram: <a href="https://t.me/irinainina" title="github">@Ailira</a>
+          </li>
+          <li class="section-item contacts-item">
+            Discord: <a href="https://discord.gg/zUr7wWYPXE" title="github">Ailira#2639</a>
+          </li>
+        </ul>
+      </section>
+      <section class="section" id="aboutMyself">
+        <h2 class="section-title">About Myself</h2>
+        <p>
+            I was an it-specialist. I got married and started to get involved in web programming. I want to learn and to gain new skills to become a professional web developer.
+        </p>
+      </section>
+      <section class="section" id="skills">
+        <h2 class="section-title">Skills and Proficiency</h2>
+        <ul class="section-list">
+          <li class="section-item">
+            Web-development:<span> HTML5, CSS3, JavaScript</span>
+          </li>
+          <li class="section-item">
+            IDE:<span>VS Code, IntelliJ IDEA</span>
+          </li>
+          <li class="section-item">
+            Version control:<span> GIT, Github</span>
+          </li>
+          <li class="section-item">
+            Graphics:<span> Adobe Photoshop, Illustrator, InDesign</span>
+          </li>
+        </ul>
+      </section>
+      <section class="section" id="code">
+        <h2 class="section-title">Code examle</h2>
+<pre class="pre"><code>
+    function capitalizeWord(word) {
+        return word[0].toUpperCase() + word.slice(1);
+      }</code></pre>
+      </section>
+      <section class="section" id="education">
+        <h2 class="section-title">Education</h2>
+        <ul class="section-list">
+          <li class="section-item">
+            <span>Bachelor, Kyrgyz State University of Construction, Transport and Architecture n.a. N. Isanov </span>
+          </li>
+          </ul>
+      </section>
+      <section class="section" id="courses">
+        <h2 class="section-title">Courses</h2>
+        <ul class="section-list">
+          <li class="section-item">
+            Jyldyz Academy<span> - Web Development By Doing: HTML / CSS / Javascript</span>
+          </li>
+          <li class="section-item">
+            RS Schools Course<span> - JavaScript/Front-end. Stage 0 (in progress)</span>
+          </li>
+        </ul>
+      </section>
+      <section class="section section-english" id="languages">
+        <h2 class="section-title">Languages</h2>
+        <ul>
+            <li>English - Intermediate </li>
+            <li>Russian - Upper-intermediate </li>
+            <li>Kyrgyz - Native </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-container">
+      <div>© 2022 <a href="https://github.com/Ailira95" class="github nav-link">Ailira95</a></div>
+      <a href="https://rs.school/js/" class="rss"></a>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
 </body>
+
 </html>
