@@ -1,0 +1,96 @@
+// обнуление стилей
+*
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li{
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: black;
+}
+@font-face {
+    font-family: "Proxima Nova Bold";
+    font-style: bold;
+    font-weight: 400;
+    src: local("Proxima Nova Bold"),
+         /* Если не получилось, загрузит woff2 */
+         url("/fonts/roboto.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("/fonts/roboto.woff") format("woff");
+  }
+
+.container{
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.header{
+    padding-top: 30px;
+    
+    &__photo{
+        width: 153px;
+        height: 148.33px;
+        border: 1px solid #97E6CE;
+        position: absolute;
+        z-index: 2;
+        
+    }
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+.header__img-box{
+    width: 168px;
+    height: 160.33px;
+    position: relative;
+    padding: 42px 0 0 48px;
+}
+
+.header-nav__list{
+    display: flex;
+}
+
+.header__img-shadow{
+    width: 91px;
+    height: 110px; 
+    position: absolute; 
+    z-index: 1; 
+    left: 60px;
+    top: 60px;
+ 
+    background:#97E6CE
+  }
